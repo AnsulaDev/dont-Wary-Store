@@ -1,0 +1,18 @@
+.green{
+    background-color:#35ca92;
+    height: 85px;
+    
+}
+
+@font-face {
+    font-family:PressStart2P ;
+    src: url(../../public/PressStart2P-Regular.ttf);
+}
+
+.newFont{
+    font-family: PressStart2P;
+    font-weight: 500;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing:normal;
+}

@@ -1,0 +1,17 @@
+.footerColor{
+    background-color:#35ca92;
+    height: auto;
+    
+    
+}
+@font-face {
+    font-family:PressStart2P ;
+    src: url(../../public/PressStart2P-Regular.ttf);
+}
+
+.footerFont{
+    font-family: PressStart2P;
+    font-weight: 500;
+    font-size: 10px;
+    color: #fff;
+}

@@ -7,7 +7,7 @@ const FooterComponent = () => {
         <Container fluid>
             <Row className="mt-5">
             <Col className="text-dark text-center py-5 footerColor">
-                Copyright &copy; Don't Wary
+                Copyright &copy; <span className="footerFont">Don't Wary</span>
             </Col>
             </Row>
         </Container>

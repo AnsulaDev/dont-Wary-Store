@@ -12,8 +12,8 @@ import Register from "./pages_components/registerPage.component"
 import UserCartDetailsPage from "./pages_components/user_components/userCartDetailsPage.component";
 import UserOrderDetailsPage from "./pages_components/user_components/userOrderDetailsPage.component";
 import UserOrderPage from "./pages_components/user_components/userOrderPage.component";
-import UserProfilePage from "./pages_components/user_components/userProfilePage.compoent";
-import ProtectedRoutesCompoent from "./compoents/protectedRoutesCompoent";
+import UserProfilePage from "./pages_components/user_components/userProfilePage.component";
+import ProtectedRoutesCompoent from "./components/protectedRoutesComponent";
 
 //admin pages
 import AdminUserPage from "./pages_components/admin/adminUserPage.component";
@@ -26,10 +26,10 @@ import AdminProductPage from './pages_components/admin/adminProductPage.componen
 import AdminEditProduct from './pages_components/admin/adminEditProduct.component';
 import AdminCreateProductPage from './pages_components/admin/adminCreateProductPage.component';
 
-import HeaderComponet from './compoents/header.component'
-import FooterCompoent from './compoents/footer.component';
+import HeaderComponet from './components/header.component'
+import FooterCompoent from './components/footer.component';
 //chat
-import RoutesWithUserChatComponent from './compoents/user_chat/routesWithUserChat.component';
+import RoutesWithUserChatComponent from './components/user_chat/routesWithUserChat.component';
 
 function App() {
   return (

@@ -13,7 +13,7 @@ const HeaderComponent = () => {
             <LinkContainer to="/">
                 
                 <Navbar.Brand href="/href">
-                <span className="font-weight-bold">Don't Wary </span>
+                <span className="newFont">Don't Wary </span>
                 
                 </Navbar.Brand>
             </LinkContainer>
@@ -41,7 +41,7 @@ const HeaderComponent = () => {
                 </Button>
                 </InputGroup>
             </Nav>
-            <Nav>
+            <Nav >
                 <LinkContainer to="/admin/orders">
                     <Nav.Link >Admin
                     <span className="position-absolute top-1 start-10 translate-middle p-2 bg-danger border border-light rounded-circle"></span>
