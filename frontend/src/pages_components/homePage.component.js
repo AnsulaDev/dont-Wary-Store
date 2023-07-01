@@ -15,13 +15,15 @@ const HomePage  = () => {
         "Cabinets",
         "Power Supplies",
         "Motherboards",
+        "Memory",
+        "Storage",
     ];
     return (
         <>
             <ProductCarousel/>
-            <Container>
+            <Container >
             <Row xs={1} md={2} 
-            className="g-4 mt-5 "
+            className="g-4 mt-5  "
             >
                 {
                     categories.map((category, idx) => (

@@ -1,6 +1,6 @@
 .green{
     background-color:#35ca92;
-    height: 85px;
+    
     
 }
 
@@ -12,7 +12,5 @@
 .newFont{
     font-family: PressStart2P;
     font-weight: 500;
-    font-size: 30px;
     color: #fff;
-    letter-spacing:normal;
 }

@@ -8,12 +8,12 @@ import { Link } from "react-router-dom";
 import "./header.css";
 const HeaderComponent = () => {
     return (
-        <Navbar collapseOnSelect expand="lg"  className="green">
+        <Navbar collapseOnSelect expand="lg"  className="green h-80">
         <Container >
             <LinkContainer to="/">
                 
                 <Navbar.Brand href="/href">
-                <span className="newFont">Don't Wary </span>
+                <span className="newFont fs-2">Don't Wary </span>
                 
                 </Navbar.Brand>
             </LinkContainer>
@@ -33,6 +33,8 @@ const HeaderComponent = () => {
                 <Dropdown.Item>Cpu Coolers</Dropdown.Item>
                 <Dropdown.Item>Case Fans</Dropdown.Item>
                 <Dropdown.Item>Mohterboards</Dropdown.Item>
+                <Dropdown.Item>Memory</Dropdown.Item>
+                <Dropdown.Item>Storage</Dropdown.Item>
                 
                 </DropdownButton>
                 <Form.Control type="text" placeholder="Search in shop.." />
@@ -48,7 +50,7 @@ const HeaderComponent = () => {
                     </Nav.Link>
                     
                 </LinkContainer>
-                <Nav.Link >Shop</Nav.Link>
+                <Nav.Link >Products</Nav.Link>
                 <NavDropdown title="Ansula" id="collasible-nav-dropdown">
                 <NavDropdown.Item eventKey="/user/my-orders" as={Link} to="/user/my-orders">
                     My Orders</NavDropdown.Item>

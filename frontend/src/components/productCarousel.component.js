@@ -48,7 +48,7 @@ const ProductCarousel = () => {
     
             <Carousel.Caption>
             <LinkContainer style={cursorP} to="/product-details">
-                <h3>Bestseller custom Mechanical keyboards</h3>
+                <h3>Bestseller Mechanical keyboards</h3>
                 </LinkContainer>
                 
             </Carousel.Caption>
