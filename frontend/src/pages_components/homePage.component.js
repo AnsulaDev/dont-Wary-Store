@@ -17,6 +17,8 @@ const HomePage  = () => {
         "Motherboards",
         "Memory",
         "Storage",
+        "Controller",
+        "CPU"
     ];
     return (
         <>

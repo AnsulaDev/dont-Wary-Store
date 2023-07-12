@@ -30,44 +30,46 @@ import HeaderComponet from './components/header.component'
 import FooterCompoent from './components/footer.component';
 //chat
 import RoutesWithUserChatComponent from './components/user_chat/routesWithUserChat.component';
-
+////scroll
+import ScrollToTop from './utils/scrollToTop';
 function App() {
   return (
     <BrowserRouter>
-    <HeaderComponet/>
-    <Routes>
-        <Route element = {<RoutesWithUserChatComponent/>}>
-         {/* publicly available routes: */}
-          <Route path = "/" element = {  <HomePage/> } />
-          <Route path = "/cart" element = {  <CartPage/> } />
-          <Route path = "/login" element = {  <LoginPage/> } />
-          <Route path = "/register" element = {  <Register/> } />
-          <Route path = "/product-list" element = {  <ProductList/> } />
-          <Route path = "/product-details/:id" element = {  <ProductDetails/> } />
-          <Route path = "*" element = "page doesn't exist" />
-        </Route>
-        //protected user routes
-          <Route element={<ProtectedRoutesCompoent admin={false} />}>
-            <Route path = "/user" element = {  <UserProfilePage/> } />
-            <Route path = "/user/my-orders" element = {  <UserOrderPage/> } />
-            <Route path = "/user/cart-details" element = {  <UserCartDetailsPage/> } />
-            <Route path = "/user/order-details" element = {  <UserOrderDetailsPage/> } />
+    <ScrollToTop/>
+      <HeaderComponet/>
+      <Routes>
+          <Route element = {<RoutesWithUserChatComponent/>}>
+          {/* publicly available routes: */}
+            <Route path = "/" element = {  <HomePage/> } />
+            <Route path = "/cart" element = {  <CartPage/> } />
+            <Route path = "/login" element = {  <LoginPage/> } />
+            <Route path = "/register" element = {  <Register/> } />
+            <Route path = "/product-list" element = {  <ProductList/> } />
+            <Route path = "/product-details/:id" element = {  <ProductDetails/> } />
+            <Route path = "*" element = "page doesn't exist" />
           </Route>
+          //protected user routes
+            <Route element={<ProtectedRoutesCompoent admin={false} />}>
+              <Route path = "/user" element = {  <UserProfilePage/> } />
+              <Route path = "/user/my-orders" element = {  <UserOrderPage/> } />
+              <Route path = "/user/cart-details" element = {  <UserCartDetailsPage/> } />
+              <Route path = "/user/order-details" element = {  <UserOrderDetailsPage/> } />
+            </Route>
 
-        //protected admin routes
-        <Route element={<ProtectedRoutesCompoent admin={true}/>}>
-          <Route path = "/admin/users" element = {  <AdminUserPage/> } />
-          <Route path = "/admin/edit-user" element = {  <AdminEditUserPage/> } />
-          <Route path = "/admin/analytics" element = {  <AdminAnalyticsPage/> } />
-          <Route path = "/admin/chat" element = {  <AdminChatPage/> } />
-          <Route path = "/admin/orders" element = {  <AdminOrderPage/> } />
-          <Route path = "/admin/order-details" element = {  <AdminOrderDetails/> } />
-          <Route path = "/admin/product" element = {  <AdminProductPage/> } />
-          <Route path = "/admin/edit-product" element = {  <AdminEditProduct/> } />
-          <Route path = "/admin/create-product" element = {  <AdminCreateProductPage/> } />
-        </Route>
-    </Routes>
-      <FooterCompoent/>
+          //protected admin routes
+          <Route element={<ProtectedRoutesCompoent admin={true}/>}>
+            <Route path = "/admin/users" element = {  <AdminUserPage/> } />
+            <Route path = "/admin/edit-user" element = {  <AdminEditUserPage/> } />
+            <Route path = "/admin/analytics" element = {  <AdminAnalyticsPage/> } />
+            <Route path = "/admin/chat" element = {  <AdminChatPage/> } />
+            <Route path = "/admin/orders" element = {  <AdminOrderPage/> } />
+            <Route path = "/admin/order-details" element = {  <AdminOrderDetails/> } />
+            <Route path = "/admin/product" element = {  <AdminProductPage/> } />
+            <Route path = "/admin/edit-product" element = {  <AdminEditProduct/> } />
+            <Route path = "/admin/create-product" element = {  <AdminCreateProductPage/> } />
+          </Route>
+      </Routes>
+        <FooterCompoent/>
     </BrowserRouter>
   
   );

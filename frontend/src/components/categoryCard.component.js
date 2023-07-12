@@ -11,14 +11,17 @@ const CategoryCard = ({category, idx}) => {
         "/images/monitors-category.png",
         "/images/mousepad-category.png",
         "/images/headphone-category.png",
-        "/images/monitor-riser-category.png",
+        "/images/monitorriser-category.png",
         "/images/cooler-category.png",
         "/images/casefan-category.png",
         "/images/cabinet-category.png",
-        "/images/power-supplies-category.png",
+        "/images/powersupplies-category.png",
         "/images/motherboards-category.png",
         "/images/memory-category.png",
         "/images/storage-category.png",
+        "/images/controller-category.png",
+        "/images/processor-category.png",
+  
     ]
     return (
         <Card className='categorybg'>

@@ -8,12 +8,12 @@ import { Link } from "react-router-dom";
 import "./header.css";
 const HeaderComponent = () => {
     return (
-        <Navbar collapseOnSelect expand="lg"  className="green h-80">
+        <Navbar collapseOnSelect expand="lg"  className="green h-80 ">
         <Container >
             <LinkContainer to="/">
                 
                 <Navbar.Brand href="/href">
-                <span className="newFont fs-2">Don't Wary </span>
+                <span className="newFont fs-2 fw-bold">Don't Wary </span>
                 
                 </Navbar.Brand>
             </LinkContainer>
