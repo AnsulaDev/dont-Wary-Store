@@ -27,6 +27,7 @@ import AdminEditProduct from './pages_components/admin/adminEditProduct.componen
 import AdminCreateProductPage from './pages_components/admin/adminCreateProductPage.component';
 
 import HeaderComponet from './components/header.component'
+
 import FooterCompoent from './components/footer.component';
 //chat
 import RoutesWithUserChatComponent from './components/user_chat/routesWithUserChat.component';
@@ -69,6 +70,7 @@ function App() {
             <Route path = "/admin/create-product" element = {  <AdminCreateProductPage/> } />
           </Route>
       </Routes>
+  
         <FooterCompoent/>
     </BrowserRouter>
   

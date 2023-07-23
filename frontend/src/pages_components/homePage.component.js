@@ -18,14 +18,16 @@ const HomePage  = () => {
         "Memory",
         "Storage",
         "Controller",
-        "CPU"
+        "CPU",
+        "laptop",
+        "Mic"
     ];
     return (
         <>
             <ProductCarousel/>
             <Container >
             <Row xs={1} md={2} 
-            className="g-4 mt-5  "
+            className="g-4 mt-5   justify-content-center"
             >
                 {
                     categories.map((category, idx) => (

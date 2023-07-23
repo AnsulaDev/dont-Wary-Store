@@ -1,13 +1,14 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import {LinkContainer} from "react-router-bootstrap";
+import './carousel.styles.css';
 
 const ProductCarousel = () => {
     const cursorP ={
         cursor:"pointer"
     }
     return (
-        <Carousel>
+        <Carousel >
         <Carousel.Item>
             <img
                 className="d-block w-100"
@@ -17,7 +18,7 @@ const ProductCarousel = () => {
             />
             <Carousel.Caption>
                 <LinkContainer style={cursorP} to="/product-details">
-                <h3>Bestseller graphics cards</h3>
+                <h3 className='carouselTitle'>Bestseller graphics cards</h3>
                 </LinkContainer>
             
                 
@@ -33,7 +34,7 @@ const ProductCarousel = () => {
     
             <Carousel.Caption>
             <LinkContainer style={cursorP} to="/product-details">
-                <h3>Bestseller cabinets</h3>
+                <h3 className='carouselTitle'>Bestseller cabinets</h3>
                 </LinkContainer>
             
             </Carousel.Caption>
@@ -48,7 +49,7 @@ const ProductCarousel = () => {
     
             <Carousel.Caption>
             <LinkContainer style={cursorP} to="/product-details">
-                <h3>Bestseller Mechanical keyboards</h3>
+                <h3 className='carouselTitle'>Bestseller Mechanical keyboards</h3>
                 </LinkContainer>
                 
             </Carousel.Caption>

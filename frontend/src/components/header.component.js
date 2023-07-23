@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import "./header.css";
 const HeaderComponent = () => {
     return (
-        <Navbar collapseOnSelect expand="lg"  className="green h-80 ">
+        <Navbar collapseOnSelect expand="lg"  className="green h-80  sticky-top">
         <Container >
             <LinkContainer to="/">
                 

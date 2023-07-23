@@ -21,18 +21,20 @@ const CategoryCard = ({category, idx}) => {
         "/images/storage-category.png",
         "/images/controller-category.png",
         "/images/processor-category.png",
-  
+        "/images/laptop-category.png",
+        "/images/mic-category.png",
+
     ]
     return (
-        <Card className='categorybg'>
+        <Card className='categorybg col-md-4 '>
             <Card.Img variant="top" src={images[idx]} />
-            <Card.Body>
-                <Card.Title>{category}</Card.Title>
+            <Card.Body >
+                <Card.Title className='cardTitle'>{category}</Card.Title>
                 <Card.Text>
                 
                 </Card.Text>
                 <LinkContainer to="/product-list">
-                    <Button variant="primary">Shop Now!</Button>
+                    <Button variant="primary " >Shop Now</Button>
                 </LinkContainer>
                 
                 </Card.Body>

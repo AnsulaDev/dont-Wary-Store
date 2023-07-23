@@ -10,7 +10,7 @@ const ProductListPage = () => {
     return (
         <Container fluid>
         <Row>
-            <Col md={3}>
+            <Col md={2}>
             <ListGroup variant="flush">
                 <ListGroup.Item className="mb-3 mt-3">
                 <SortOptionsComponent />
@@ -30,11 +30,11 @@ const ProductListPage = () => {
                 </ListGroup.Item>
                 <ListGroup.Item>
                 <Button variant="primary">Filter</Button>
-                <Button variant="danger">Reset filters</Button>
+                <Button variant="danger">Reset </Button>
                 </ListGroup.Item>
             </ListGroup>
             </Col>
-            <Col md={9}>
+            <Col md={9} >
             {Array.from({ length: 5 }).map((_, idx) => (
                 <ProductForListComponent
                 key={idx}
